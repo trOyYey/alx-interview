@@ -6,7 +6,7 @@
 
 def canUnlockAll(boxes):
     """
-    checks if all boxes have keys
+    verify if all boxes can be unlocked or not
     """
     unlocked = []
     package = len(boxes)
