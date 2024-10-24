@@ -12,7 +12,7 @@ def print_data(data):
     for key in data['codes']:
         if data['codes'][key] != 0:
             data_o += '{}: {}\n'.format(key, data['codes'][key])
-    sys.stdout.write(out)
+    sys.stdout.write(data_o)
     sys.stdout.flush()
 
 
