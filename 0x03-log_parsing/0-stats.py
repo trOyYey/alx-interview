@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 0-stats.py module
