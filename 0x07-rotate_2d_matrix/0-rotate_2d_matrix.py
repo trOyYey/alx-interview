@@ -6,7 +6,7 @@ rotate 2d matrix module
 
 def rotate_2d_matrix(matrix):
     '''
-    rotate 2d matrix 
+    rotate 2d matrix
     '''
     length = len(matrix)
     median = int(length / 2)
