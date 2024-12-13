@@ -30,8 +30,8 @@ def isWinner(x, nums):
 
     numsL = len(nums)
     primes = builPrimesArray(max(nums))
-    M = 0
-    B = 0
+    MARIA = 0
+    BEN = 0
     for round in range(x):
         valid = [n for n in range(2, nums[round % numsL] + 1) if primes[n]]
         if len(valid) % 2 == 1:
