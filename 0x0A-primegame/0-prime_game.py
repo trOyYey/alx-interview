@@ -35,12 +35,12 @@ def isWinner(x, nums):
     for round in range(x):
         valid = [n for n in range(2, nums[round % numsL] + 1) if primes[n]]
         if len(valid) % 2 == 1:
-            M += 1
+            MARIA += 1
         else:
-            B += 1
-    if B == M:
+            BEN += 1
+    if BEN == MARIA:
         return
-    elif B > M:
+    elif BEN > MARIA:
         return 'Ben'
     else:
         return 'Maria'
