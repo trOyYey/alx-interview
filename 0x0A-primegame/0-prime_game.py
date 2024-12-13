@@ -4,7 +4,7 @@ prime_game mod
 '''
 
 
-def PrimesArray(n):
+def Priming(n):
     '''
     Returns array up to n where the index
     '''
@@ -29,18 +29,18 @@ def isWinner(x, nums):
         return
 
     numsL = len(nums)
-    primes = builPrimesArray(max(nums))
-    MARIA = 0
-    BEN = 0
+    primes = Priming(max(nums))
+    Mari = 0
+    Beni = 0
     for round in range(x):
         valid = [n for n in range(2, nums[round % numsL] + 1) if primes[n]]
         if len(valid) % 2 == 1:
-            MARIA += 1
+            Mari += 1
         else:
-            BEN += 1
-    if BEN == MARIA:
+            Beni += 1
+    if Beni == Mari:
         return
-    elif BEN > MARIA:
+    elif Beni > Mari:
         return 'Ben'
     else:
         return 'Maria'
